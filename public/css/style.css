@@ -1,0 +1,46 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: #111111
+}
+
+h1 {
+  font-size: 5vh;
+  text-shadow: 
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,  
+    -2px  2px 0 #000,  
+     2px  2px 0 #000,  
+    -2px  0px 0 #000,  
+     2px  0px 0 #000,  
+     0px -2px 0 #000,  
+     0px  2px 0 #000;
+}
+
+.content {
+  color: white;
+  font-family: Verdana;
+}
+
+.background {
+  position: fixed; /* Keeps the background fixed while scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-image: url('background.webp');
+  background-size: cover; /* Scales image to fit */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  z-index: -1; /* Moves it behind content */
+}
+
+.bg1 {
+  left: 0; /* First image starts at the left */
+}
+
+.bg2 {
+left: 100vw; /* Second image starts just off-screen to the right */
+}

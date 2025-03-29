@@ -2,12 +2,22 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+@font-face {
+  font-family: 'omori';
+  src: url('../fonts/OMORI_GAME2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   background-color: #111111
 }
 
 h1 {
-  font-size: 5vh;
+  font-family: 'omori', sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 6vh;
   text-shadow: 
     -2px -2px 0 #000,  
      2px -2px 0 #000,  
@@ -30,7 +40,7 @@ h1 {
   left: 0;
   width: 100vw; /* Full viewport width */
   height: 100vh; /* Full viewport height */
-  background-image: url('background.webp');
+  background-image: url('../images/background.webp');
   background-size: cover; /* Scales image to fit */
   background-repeat: no-repeat; /* Prevents tiling */
   background-position: center; /* Centers the image */

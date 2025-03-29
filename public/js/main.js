@@ -1,9 +1,12 @@
+// scripts all pages should have
+
+// parallax
+{
 let bg1 = document.querySelector(".bg1");
 let bg2 = document.querySelector(".bg2");
 let x1 = 0;
 let x2 = window.innerWidth; // Second background starts just off-screen
 const speed = 0.3; // Adjust for speed
-
 function animate() {
     x1 -= speed;
     x2 -= speed;
@@ -23,5 +26,11 @@ function animate() {
 
     requestAnimationFrame(animate);
 }
-
 animate();
+}
+
+// back button
+function previousPage() {
+        window.history.back();
+}
+x1 = 1;

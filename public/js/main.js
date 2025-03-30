@@ -5,18 +5,17 @@
 let bg1 = document.querySelector(".bg1");
 let bg2 = document.querySelector(".bg2");
 let x1 = 0;
-let x2 = window.innerWidth; // Second background starts just off-screen
-const speed = 0.3; // Adjust for speed
+let x2 = window.innerWidth; // second background starts immediately off-screen
+const speed = 0.3;
+
 function animate() {
     x1 -= speed;
     x2 -= speed;
 
-    // When the first background moves off-screen, reset it to the right
+    // move background to the right once no longer visible
     if (x1 <= -window.innerWidth) {
         x1 = x2 + window.innerWidth;
     }
-
-    // When the second background moves off-screen, reset it to the right
     if (x2 <= -window.innerWidth) {
         x2 = x1 + window.innerWidth;
     }
@@ -26,11 +25,22 @@ function animate() {
 
     requestAnimationFrame(animate);
 }
+
 animate();
 }
 
 // back button
-function previousPage() {
-        window.history.back();
+{
+let backButton = document.getElementById("backButton");
+
+backButton.addEventListener("mousedown", function() {
+    // make button go down
+    backButton.style.transform = "translate(4vw, -28vh)";
+    
+});
+
+backButton.addEventListener("mouseup", function() {
+    backButton.style.transform = "translate(4vw, -30vh)";
+    window.history.back();
+});
 }
-x1 = 1;

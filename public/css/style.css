@@ -22,16 +22,16 @@ h1 {
   font-family: 'omori', sans-serif;
   letter-spacing: 0.3rem;
   font-size: 7vh;
-  transform: translateY(-7vh); 
-  text-shadow: 
-    -2px -2px 0 #000,  
-     2px -2px 0 #000,  
-    -2px  2px 0 #000,  
-     2px  2px 0 #000,  
-    -2px  0px 0 #000,  
-     2px  0px 0 #000,  
-     0px -2px 0 #000,  
-     0px  2px 0 #000;
+  transform: translateY(-2vh);
+  text-shadow:
+      -2px -2px 0 #000,
+       2px -2px 0 #000,
+      -2px  2px 0 #000,
+       2px  2px 0 #000,
+      -2px  0px 0 #000,
+       2px  0px 0 #000,
+       0px -2px 0 #000,
+       0px  2px 0 #000;
 }
 
 #specialHeader {
@@ -97,12 +97,7 @@ position: fixed;
 #backButton {
   width: 6vw;  
   height: auto;  /* auto scale height */
-  transform: translate(4vw, -30vh)
-}
-
-#backButton:hover {
-  content: url('../images/lightbulbExtendedHover.png');
-  transform: translate(4vw, -29vh); 
+  transform: translate(4vw, -40vh)
 }
 
 .contentBox {

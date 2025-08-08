@@ -31,16 +31,27 @@ animate();
 
 // back button
 {
-let backButton = document.getElementById("backButton");
+    let backButton = document.getElementById("backButton");
 
-backButton.addEventListener("mousedown", function() {
-    // make button go down
-    backButton.style.transform = "translate(4vw, -28vh)";
-    
-});
+    backButton.addEventListener("mousedown", function() {
+        // make button go down
+        backButton.style.transform = "translate(4vw, -38vh)";
 
-backButton.addEventListener("mouseup", function() {
-    backButton.style.transform = "translate(4vw, -30vh)";
-    window.history.back();
-});
+    });
+
+    backButton.addEventListener("mouseup", function() {
+        backButton.style.transform = "translate(4vw, -40vh)";
+        window.history.back();
+    });
+
+    backButton.addEventListener("mouseenter", function() {
+        backButton.src = "../images/lightbulbExtendedHover.png";
+        backButton.style.transform = "translate(4vw, -39vh)";
+    });
+
+    backButton.addEventListener("mouseleave", function() {
+        backButton.src = "../images/lightbulbExtended.png"; // original image
+        backButton.style.transform = "translate(4vw, -40vh)";
+    });
+
 }

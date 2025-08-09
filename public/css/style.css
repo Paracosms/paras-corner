@@ -54,6 +54,7 @@ h1 {
   background-size: cover; /* cover not stretch */
   background-repeat: no-repeat; /* no 1990s tiling */
   background-position: center; /* centered */
+  pointer-events: none; /* mouse pass through */
   z-index: -1; /* behind everything */
 }
 
@@ -66,9 +67,10 @@ left: 100vw; /* positioned offscreen to the right */
 }
 
 #viewport-container {
-width: 100vw;
-height: 100vh;
-position: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  pointer-events: none; /* mouse pass through */
 }
 
 #bottom-right-message {
@@ -80,6 +82,7 @@ position: fixed;
   color: white;
   font-family: "Saitamaar";
   font-size: 20px;
+  pointer-events: auto; /* mouse input taken */
 }
 
 #onePxOutline {

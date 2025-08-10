@@ -35,23 +35,23 @@ animate();
 
     backButton.addEventListener("mousedown", function() {
         // make button go down
-        backButton.style.transform = "translate(4vw, -38vh)";
+        backButton.style.transform = "translate(0, 2vh)";
 
     });
 
     backButton.addEventListener("mouseup", function() {
-        backButton.style.transform = "translate(4vw, -40vh)";
+        backButton.style.transform = "translate(0, -2vh)";
         window.history.back();
     });
 
     backButton.addEventListener("mouseenter", function() {
         backButton.src = "../images/lightbulbExtendedHover.png";
-        backButton.style.transform = "translate(4vw, -39vh)";
+        backButton.style.transform = "translate(0, 1vh)";
     });
 
     backButton.addEventListener("mouseleave", function() {
         backButton.src = "../images/lightbulbExtended.png"; // original image
-        backButton.style.transform = "translate(4vw, -40vh)";
+        backButton.style.transform = "translate(0, -1vh)";
     });
 
 }

@@ -18,7 +18,8 @@ h1 {
   font-family: 'omori', sans-serif;
   letter-spacing: 0.3rem;
   font-size: 7vh;
-  transform: translateY(-2vh);
+  margin-top: 2vh;
+  padding-bottom: 2vh;
   text-shadow:
       -2px -2px 0 #000,
        2px -2px 0 #000,
@@ -89,9 +90,12 @@ left: 100vw; /* positioned offscreen to the right */
 }
 
 #backButton {
+  position: fixed;
   width: 6vw;  
   height: auto;  /* auto scale height */
-  transform: translate(4vw, -40vh)
+  margin-left: 4vw;
+  margin-top: -40vh;
+  z-index: 2;
 }
 
 .contentBox {

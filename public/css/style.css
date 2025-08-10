@@ -64,19 +64,12 @@ h1 {
 left: 100vw; /* positioned offscreen to the right */
 }
 
-#viewport-container {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  pointer-events: none; /* mouse pass through */
-}
-
 #bottom-right-message {
   right: 0;
   bottom: 0;
   position: absolute;
   padding: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   color: white;
   font-family: "Saitamaar", sans-serif;
   font-size: 20px;

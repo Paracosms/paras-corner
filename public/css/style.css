@@ -101,7 +101,7 @@ left: 100vw; /* positioned offscreen to the right */
 .contentBox {
   width: 60vw;
   height: 100vh;
-  transform: translate(17.5vw, -5vh);     
+  transform: translate(17.5vw, -5vh);
   background-color: rgba(24, 10, 31, 0.7);
   position: fixed;
   border-radius: 25px;

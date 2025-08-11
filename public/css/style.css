@@ -10,6 +10,10 @@
   src: url('../fonts/Saitamaar-Regular.woff2') format("woff2");
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #111111
 }
@@ -19,6 +23,10 @@ h1 {
   letter-spacing: 0.3rem;
   font-size: 7vh;
   margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
   padding-bottom: 2vh;
   text-shadow:
       -2px -2px 0 #000,
@@ -41,6 +49,10 @@ h1 {
   font-size: 20px;
   z-index: 1;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+
 }
 
 .background {
@@ -94,28 +106,43 @@ left: 100vw; /* positioned offscreen to the right */
   width: 6vw;  
   height: auto;  /* auto scale height */
   margin-left: 4vw;
-  margin-top: -40vh;
+  margin-top: -30vh;
   z-index: 2;
 }
 
 .contentBox {
   width: 60vw;
   height: 100vh;
-  transform: translate(17.5vw, -5vh);
-  background-color: rgba(24, 10, 31, 0.7);
   position: fixed;
+  top: 13vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(24, 10, 31, 0.7);
   border-radius: 25px;
   padding: 80px;
 }
 
 #backText {
+  left: 10px;
+  top: 0;
+  margin: 0;
+  position: fixed;
   font-family: 'omori', sans-serif;
   letter-spacing: 0.3rem;
   font-size: 4vh;
   color: white;
-  transform: translateX(10vw);
 }
 
 .backButtonContainer {
   position: fixed;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+

@@ -47,11 +47,13 @@ animate();
     backButton.addEventListener("mouseenter", function() {
         backButton.src = "../images/lightbulbExtendedHover.png";
         backButton.style.transform = "translate(0, 1vh)";
+        document.getElementById("backText").classList.add("show");
     });
 
     backButton.addEventListener("mouseleave", function() {
         backButton.src = "../images/lightbulbExtended.png"; // original image
         backButton.style.transform = "translate(0, -1vh)";
+        document.getElementById("backText").classList.remove("show");
     });
 
 }
